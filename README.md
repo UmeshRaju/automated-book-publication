@@ -41,18 +41,15 @@ This project automates the process of transforming web-based book chapters into 
    pip install -r requirements.txt
    playwright install
    ```
----
-
-## 2. Set up your API key:
-
-GEMINI_API_KEY=your_google_gemini_api_key_here
-
----
-
-## 3.Run the Project:
-
-python main.py
-
+   
+2. Set up your API key:
+   ```
+   GEMINI_API_KEY=your_google_gemini_api_key_here
+   ```
+3.Run the Project:
+  ```
+  python main.py
+  ```
 ---
 
 ## 📁 Project Structure
