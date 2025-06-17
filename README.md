@@ -37,10 +37,10 @@ This project automates the process of transforming web-based book chapters into 
 ## 🔐 Setup Instructions
 
 1. **Install dependencies:**
-
-   pip install -r requirements.txt 
+   ```
+   pip install -r requirements.txt
    playwright install
-
+   ```
 ---
 
 ## 2. Set up your API key:
@@ -57,6 +57,7 @@ python main.py
 
 ## 📁 Project Structure
 
+```
 automated_book_workflow/
 ├── agents/
 │   ├── writer_agent.py
@@ -73,7 +74,7 @@ automated_book_workflow/
 ├── .gitignore
 ├── main.py
 └── README.md
-
+```
 ---
 
 ## 📝 Notes
