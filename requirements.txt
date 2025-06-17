@@ -1,0 +1,6 @@
+playwright
+beautifulsoup4
+chromadb
+uuid
+google-generativeai
+python-dotenv

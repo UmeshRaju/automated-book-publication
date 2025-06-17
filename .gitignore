@@ -1,0 +1,16 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore environment variables
+.env
+.env.*
+
+# Ignore Playwright screenshots or browser files
+.screenshots/
+playwright-report/
+trace.zip
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
