@@ -1,21 +1,22 @@
+# agents/writer_agent.py
+
 import os
-from dotenv import load_dotenv
 import google.generativeai as genai
+from dotenv import load_dotenv
 
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-model = genai.GenerativeModel('gemini-pro')
+genai.configure(api_key=GEMINI_API_KEY)
 
-
-def ai_writer_spin(raw_text: str) -> str:
+def ai_writer_spin(text: str) -> str:
     print("\n✍️ AI Writer (Gemini) is rewriting the content...")
-
-    prompt = f"""Rewrite the following chapter with better flow and slight variation in sentence structure while preserving the original meaning:\n\n{raw_text}"""
-    
     try:
-        response = model.generate_content(prompt)
+        model = genai.GenerativeModel("models/gemini-1.5-flash-latest")
+        response = model.generate_content(
+            f"Rewrite the following text for a smoother reading experience while preserving the original meaning:\n{text}"
+        )
         return response.text
     except Exception as e:
-        print(f"❌ Error with Gemini Writer: {e}")
-        return raw_text
+        print("❌ Error with Gemini Writer:", e)
+        return text

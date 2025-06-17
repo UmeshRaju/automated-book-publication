@@ -8,7 +8,6 @@ from agents.editor_agent import human_edit_loop
 from versioning.chromadb_store import save_version, search_versions
 from retrieval.rl_search import rl_ranked_search
 
-# At the end
 
 URL = "https://en.wikisource.org/wiki/The_Gates_of_Morning/Book_1/Chapter_1"
 
