@@ -39,6 +39,7 @@ This project automates the process of transforming web-based book chapters into 
 1. **Install dependencies:**
    ```
    pip install -r requirements.txt
+   playwright install-deps
    playwright install
    ```
    
